@@ -1,4 +1,4 @@
-# 🛠️ Actualizador de Base de Datos
+# 🛠️ DatabaseUpdateTool - TradeAIcode
 
 [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
 [![PyQt5](https://img.shields.io/badge/PyQt5-5.15-green)](https://pypi.org/project/PyQt5/)
@@ -6,47 +6,59 @@
 
 ---
 
+<p align="center">
+  <img src="imagenes/portada.jpg" alt="DatabaseUpdateTool portada" width="800"/>
+</p>
+
+---
+
 # 📚 Tabla de Contenidos
-- [Descripción](#-descripción)
-- [Vista previa](#-vista-previa-de-la-aplicación)
-- [Características](#-características-principales)
-- [Instalación y requisitos](#-instalación-y-requisitos)
-- [Uso detallado](#-uso-detallado)
-- [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [Licencia](#-licencia)
+- [📚 Descripción](#-descripción)
+- [📸 Vista previa](#-vista-previa-de-la-aplicación)
+- [✨ Características](#-características-principales)
+- [⚙️ Instalación y requisitos](#-instalación-y-requisitos)
+- [🚀 Uso detallado](#-uso-detallado)
+- [💪 Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [📄 Licencia](#-licencia)
 
 ---
 
 ## 📚 Descripción
 
-**Actualizador de Base de Datos** es una potente herramienta en Python que permite actualizar registros de tablas de forma automática, fácil y segura:
+**DatabaseUpdateTool** es una potente herramienta en Python y PyQt5 para actualizar datos de manera rápida y segura:
 
 - Carga un archivo antiguo para modificar.
-- Carga un archivo nuevo con datos actualizados.
-- Actualiza campos automáticamente según claves.
-- Exporta tablas completas de base de datos a CSV o Excel.
+- Carga un archivo nuevo con los datos actualizados.
+- Actualiza campos automáticamente comparando por clave primaria.
+- Exporta tablas completas de bases de datos a CSV o Excel.
 - Soporta conexiones a **MySQL** y **SQL Server**.
 
-Ideal para automatizar tareas de mantenimiento de bases de datos.
+Ideal para automatizar tareas de mantenimiento y actualización de registros.
 
 ---
 
 ## 📸 Vista previa de la aplicación
 
-*(Pronto: insertar captura de pantalla del GUI PyQt5)*
+<p align="center">
+  <img src="imagenes/logo.png" alt="Logo DatabaseUpdateTool" width="300"/>
+</p>
+
+<p align="center">
+  <img src="imagenes/captura_gui.png" alt="Vista previa del GUI"/>
+</p>
 
 ---
 
 ## ✨ Características principales
 
 - Interfaz gráfica moderna con **PyQt5**.
-- Ordenar cualquier columna con solo hacer clic en la cabecera.
+- Ordena columnas con un simple clic.
 - Logs de actividad informativos en cada pestaña.
-- Actualización de campos inteligente (solo si cambian y no están vacíos).
-- Exportación rápida de datos a **CSV** y **Excel**.
+- Actualización de datos basada en cambios reales (sin sobreescribir vacíos).
+- Exportación rápida a **CSV** y **Excel**.
 - Configuración persistente usando `config.json`.
-- Soporte para dos tipos de bases de datos: **MySQL** y **SQL Server**.
-- Cálculo y visualización de número de registros.
+- Soporte para **MySQL** y **SQL Server**.
+- Visualización del número de registros cargados.
 
 ---
 
@@ -67,9 +79,9 @@ Instalación rápida:
 pip install -r requirements.txt
 ```
 
-**Notas adicionales:**
-- Para conexiones SQL Server debes tener instalado un driver ODBC compatible.
-- Para conexiones MySQL debes asegurarte que `pymysql` esté disponible.
+**Notas:**
+- SQL Server requiere tener un driver ODBC instalado.
+- MySQL usa `pymysql` para la conexión.
 
 ---
 
@@ -78,33 +90,33 @@ pip install -r requirements.txt
 ### Configuración inicial
 
 1. Abre la aplicación.
-2. Dirígete a la pestaña **"Configuración (Base de Datos)"**.
+2. Ve a la pestaña **"Configuración (Base de Datos)"**.
 3. Introduce:
    - Servidor
    - Puerto
    - Usuario
    - Contraseña
-   - Nombre de la base de datos
-   - Nombre de la tabla
+   - Base de datos
+   - Tabla
    - Tipo de base de datos (MySQL o SQL Server)
 4. Haz clic en **"Guardar Configuración"**.
 
-### Operaciones en la Base de Datos
+### Operaciones en la base de datos
 
-- Puedes hacer clic en **"Leer y Mostrar Tabla"** para ver una vista previa de la tabla.
-- Luego puedes exportar la tabla directamente a un archivo CSV o Excel.
+- Pulsa **"Leer y Mostrar Tabla"** para visualizar la tabla.
+- Luego puedes exportar los datos a un archivo CSV o Excel.
 
-### Actualizar Datos desde Archivos
+### Actualizar datos desde archivos
 
-1. Ve a la pestaña **"Principal (Actualizar Datos)"**.
+1. Dirígete a la pestaña **"Principal (Actualizar Datos)"**.
 2. Carga el **archivo a modificar**.
-3. Carga el **archivo con los datos nuevos**.
+3. Carga el **archivo con datos nuevos**.
 4. Selecciona:
-   - El campo a actualizar
-   - El campo clave (para emparejar registros)
-5. Haz clic en **"Actualizar Datos"**.
-6. Revisa los cambios en la vista previa.
-7. Exporta el archivo actualizado si lo deseas.
+   - Campo a actualizar
+   - Campo clave (para buscar coincidencias)
+5. Pulsa **"Actualizar Datos"**.
+6. Verifica los cambios en la vista previa.
+7. Guarda el archivo actualizado si lo deseas.
 
 ---
 
@@ -125,5 +137,5 @@ Este proyecto está licenciado bajo la licencia **MIT**. Consulta el archivo [LI
 
 ---
 
-> Desarrollado con ❤️ por 
+> Desarrollado con ❤️ por [TradeAIcode](https://github.com/TradeAIcode)
 
