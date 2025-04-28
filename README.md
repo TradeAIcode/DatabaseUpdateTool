@@ -7,7 +7,7 @@
 ---
 
 <p align="center">
-  <img src="imagenes/portada.jpg" alt="DatabaseUpdateTool portada" width="800"/>
+  <img src="imagenes/logo.png" alt="DatabaseUpdateTool portada" width="800"/>
 </p>
 
 ---
@@ -40,11 +40,7 @@ Ideal para automatizar tareas de mantenimiento y actualización de registros.
 ## 📸 Vista previa de la aplicación
 
 <p align="center">
-  <img src="imagenes/logo.png" alt="Logo DatabaseUpdateTool" width="300"/>
-</p>
-
-<p align="center">
-  <img src="imagenes/captura_gui.png" alt="Vista previa del GUI"/>
+  <img src="imagenes/portada.jpg" alt="Vista previa del GUI"/>
 </p>
 
 ---
