@@ -40,7 +40,7 @@ Ideal para automatizar tareas de mantenimiento y actualización de registros.
 ## 📸 Vista previa de la aplicación
 
 <p align="center">
-  <img src="imagenes/portada.jpg" alt="Vista previa del GUI"/>
+  <img src="imagenes/portada.jpg" alt="Vista previa del GUI" width="400"/>
 </p>
 
 ---
